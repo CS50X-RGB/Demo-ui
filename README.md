@@ -1,53 +1,67 @@
-# Next.js & HeroUI Template
+# 📊 Next.js Hero UI Template – Component-Based Dashboard
 
-This is a template for creating applications using Next.js 14 (app directory) and HeroUI (v2).
+This project is a modern, responsive web application built with **Next.js** using the **Hero UI** component library. It demonstrates a clean, modular design approach by organizing the UI into reusable components such as a **navbar**, **stat blocks**, **filters**, **cards**, and **tables**. The layout is optimized for both desktop and mobile views.
 
-[Try it on CodeSandbox](https://githubbox.com/heroui-inc/heroui/next-app-template)
+---
 
-## Technologies Used
+## ✨ Features
 
-- [Next.js 14](https://nextjs.org/docs/getting-started)
-- [HeroUI v2](https://heroui.com/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Tailwind Variants](https://tailwind-variants.org)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Framer Motion](https://www.framer.com/motion/)
-- [next-themes](https://github.com/pacocoursey/next-themes)
+### ✅ Component-First Architecture
+- **Navbar**: Includes icons and stat blocks.
+- **Hero Section**: Simple heading with a call-to-action (Download button).
+- **Card Component**:
+  - Contains a search filter bar in the card header.
+  - Table content built using `@heroui/table`.
 
-## How to Use
+### 🧠 Smart Rendering
+- Table headers and cells are generated dynamically using a `switch-case` logic-based function returning `React.ReactNode`.
 
-### Use the template with create-next-app
+### 📱 Responsive Design
+- Mobile-first optimizations for:
+  - Filters (collapsed/scrollable layout)
+  - Table (horizontally scrollable)
+  - Mobile-friendly Navbar with hamburger menu and user avatar.
 
-To create a new project based on this template using `create-next-app`, run the following command:
+---
 
-```bash
-npx create-next-app -e https://github.com/heroui-inc/next-app-template
-```
+## 🛠️ Technologies Used
 
-### Install dependencies
+- [Next.js](https://nextjs.org/)
+- [Hero UI](https://heroui.dev/)
+- [Tailwind CSS](https://tailwindcss.com/) (via Hero UI)
+- TypeScript
 
-You can use one of them `npm`, `yarn`, `pnpm`, `bun`, Example using `npm`:
 
-```bash
-npm install
-```
+---
 
-### Run the development server
-
-```bash
-npm run dev
-```
-
-### Setup pnpm (optional)
-
-If you are using `pnpm`, you need to add the following code to your `.npmrc` file:
+## 📁 Folder Structure
 
 ```bash
-public-hoist-pattern[]=*@heroui/*
-```
+├── app/ # App routing (Next.js App Router)
+│ ├── error.tsx # Global error boundary
+│ ├── layout.tsx # Root layout shared by all routes
+│ ├── page.tsx # Main landing page
+│ └── providers.tsx # Theme, context, or third-party providers
 
-After modifying the `.npmrc` file, you need to run `pnpm install` again to ensure that the dependencies are installed correctly.
+├── components/
+│ └── reusables/ # Reusable components
+│      └── Stats.tsx # The reusable stats card where i have the name and value in green thing
+│ ├── CustomTable.tsx # Table with dynamic headers and cells
+│ ├── Header.tsx # Top section with heading & CTA
+│ └── primitives.ts # Shared base UI elements (icons, wrappers)
 
-## License
+├── config/ # Application config, constants, etc.
+├── data/ # Static data or mock responses
+├── public/ # Public assets (images, icons)
+├── styles/ # Global or scoped styles (if needed)
+├── types/ # TypeScript interfaces and utility types
 
-Licensed under the [MIT license](https://github.com/heroui-inc/next-app-template/blob/main/LICENSE).
+├── .vscode/ # Editor config (optional)
+├── .gitignore
+├── next.config.js # Next.js configuration
+├── postcss.config.js
+├── tailwind.config.js # Tailwind CSS setup
+├── tsconfig.json # TypeScript config
+├── package.json
+├── LICENSE
+├── README.md
