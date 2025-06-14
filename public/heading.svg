@@ -1,0 +1,31 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke-linecap="round">
+    <!-- Leftmost -->
+    <line x1="20" y1="50" x2="20" y2="150" stroke="#d6c69b" stroke-width="2"/>
+    <rect x="15" y="80" width="10" height="40" fill="#c4ae78"/>
+    
+    <!-- Left center 1 -->
+    <line x1="50" y1="30" x2="50" y2="170" stroke="#d6c69b" stroke-width="2"/>
+    <rect x="45" y="60" width="10" height="80" fill="#c4ae78"/>
+    
+    <!-- Left center 2 -->
+    <line x1="80" y1="20" x2="80" y2="180" stroke="#d6c69b" stroke-width="2"/>
+    <rect x="75" y="40" width="10" height="120" fill="#c4ae78"/>
+    
+    <!-- Center -->
+    <line x1="110" y1="10" x2="110" y2="190" stroke="#d6c69b" stroke-width="2"/>
+    <rect x="105" y="30" width="10" height="140" fill="#c4ae78"/>
+    
+    <!-- Right center 2 -->
+    <line x1="140" y1="20" x2="140" y2="180" stroke="#d6c69b" stroke-width="2"/>
+    <rect x="135" y="40" width="10" height="120" fill="#c4ae78"/>
+    
+    <!-- Right center 1 -->
+    <line x1="170" y1="30" x2="170" y2="170" stroke="#d6c69b" stroke-width="2"/>
+    <rect x="165" y="60" width="10" height="80" fill="#c4ae78"/>
+    
+    <!-- Rightmost -->
+    <line x1="200" y1="50" x2="200" y2="150" stroke="#d6c69b" stroke-width="2"/>
+    <rect x="195" y="80" width="10" height="40" fill="#c4ae78"/>
+  </g>
+</svg>
